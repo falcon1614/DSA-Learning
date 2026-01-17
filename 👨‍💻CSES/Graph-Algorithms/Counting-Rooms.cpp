@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+  int n,m;
+  cin>>n;
+  cin>>m;
+
+  vector<vector<int,int>> grid(n*m);
+  
+  return 0;
+}

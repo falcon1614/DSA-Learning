@@ -7,6 +7,7 @@ void solve(){
   long long i=1;
   while(count<k){
     if(i%3!=0 && i%10 !=3){
+      ///dsfsdfdsfsdfsd
       count++;
     }
     i++;

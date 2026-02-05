@@ -8,6 +8,7 @@ void solve(){
   while(count<k){
     if(i%3!=0 && i%10 !=3){
       ///dsfsdfdsfsdfsd
+      //dfdfdf
       count++;
     }
     i++;

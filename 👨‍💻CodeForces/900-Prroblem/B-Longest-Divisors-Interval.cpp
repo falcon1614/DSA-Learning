@@ -1,14 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 void solve(){
-  long long k;
-  cin>>k;
-  long count = 0;
-  long long i=1;
-  while(count<k){
-    if(i%3!=0 && i%10 !=3){
-      count++;
-    }
+  long long n;
+  cin>>n;
+
+  int i=1;
+  while(n%i == 0){
     i++;
   }
   cout<<i-1<<"\n";
@@ -16,9 +13,12 @@ void solve(){
 int main(){
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
+
   int t;
-  cin>>t;
-  while(t--){
-    solve();
+  cin >> t;
+
+  while (t--) {
+      solve();
   }
+  return 0;
 }

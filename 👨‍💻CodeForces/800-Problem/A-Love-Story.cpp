@@ -1,17 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 void solve(){
-  long long k;
-  cin>>k;
-  long count = 0;
-  long long i=1;
-  while(count<k){
-    if(i%3!=0 && i%10 !=3){
+  string s;
+  cin>>s;
+
+  string g = "codeforces";
+  int count = 0;
+  for(int i=0; i<g.size(); i++){
+    if(s[i]!=g[i]){
       count++;
     }
-    i++;
   }
-  cout<<i-1<<"\n";
+  cout<<count<<"\n";
 }
 int main(){
   ios::sync_with_stdio(false);
@@ -21,4 +21,5 @@ int main(){
   while(t--){
     solve();
   }
+  return 0;
 }

@@ -1,17 +1,8 @@
+// https://codeforces.com/contest/217/problem/B%C3%A2%C2%81%C2%A3
 #include<bits/stdc++.h>
 using namespace std;
 void solve(){
-  long long k;
-  cin>>k;
-  long count = 0;
-  long long i=1;
-  while(count<k){
-    if(i%3!=0 && i%10 !=3){
-      count++;
-    }
-    i++;
-  }
-  cout<<i-1<<"\n";
+  
 }
 int main(){
   ios::sync_with_stdio(false);
@@ -21,4 +12,5 @@ int main(){
   while(t--){
     solve();
   }
+  return 0;
 }

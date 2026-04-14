@@ -10,18 +10,29 @@ void solve(){
     cin>>a[i];
   }
 
-  sort(a.begin(), a.end());
+  sort(a.rbegin(), a.rend());
 
-  for(auto it:a){
+  for(int i=1; i<n; i++){
+    if(a[i] == a[i-1]){
+      cout << -1 <<"\n";
+      return;
+    }
+  }
+
+  for(int &it: a){
     cout << it <<" ";
   }
   cout<<"\n";
-}
 
+}
 int main(){
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
 
-  solve();
+  int t;
+  cin>>t;
+  while(t--){
+    solve();
+  }
   return 0;
 }

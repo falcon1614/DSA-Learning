@@ -2,19 +2,15 @@
 using namespace std;
 
 void solve(){
-  int n;
-  cin>>n;
+  long long n,  m,  a,  b;
+  cin >>  n >>  m >>  a >>  b;
 
-  int i = 1;
-  int j = 3*n - 1;
-
-  while(n--){
-    cout << i <<" "<< j <<" "<< (j+1) <<" ";
-    i++;
-    j -= 2;
+  if( gcd(a, n) == 1 && gcd(b, m) == 1 && gcd(n, m) <= 2){
+    cout <<"YES \n";
   }
-
-  cout<<"\n";
+  else{
+    cout <<"NO \n";
+  }
 }
 
 int main(){

@@ -1,21 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 void solve(){
   int n;
   cin>>n;
 
-  vector<int> a(n);
-  for(int i=0; i<n; i++){
-    cin>>a[i];
+  int x = 0;
+  while(n--){
+    string st;
+    cin>>st;
+    if(st.find("++") != string::npos){
+        x++;
+    } else {
+        x--;
+    }
   }
 
-  sort(a.begin(), a.end());
-
-  for(auto it:a){
-    cout << it <<" ";
-  }
-  cout<<"\n";
+  cout << x <<"\n";
 }
 
 int main(){

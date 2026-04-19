@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
-void solve()
+void solve(){
+    int n;
+    long long k;
+    cin >> n >> k;
+    if(k >= n - 1)
+        cout << 1 << endl;
+    else
+        cout << n << endl;
+}
 int main(){
     int t;
     cin>>t;
